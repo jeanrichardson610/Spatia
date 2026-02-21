@@ -1,3 +1,6 @@
+
+  <img width="2229" height="1013" alt="Screenshot 2026-02-21 at 3 35 26 PM" src="https://github.com/user-attachments/assets/7e6b4d69-985e-4cd5-9c1b-ec01824bd4d0" />
+
   <h3 align="center">Spatia | AI-powered Architectural Visualization App</h3>
 
 ## 📋 <a name="table">Table of Contents</a>
