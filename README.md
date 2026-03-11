@@ -1,53 +1,235 @@
+# 🏗️ Spatia
 
-  <img width="2229" height="1013" alt="Screenshot 2026-02-21 at 3 35 26 PM" src="https://github.com/user-attachments/assets/7e6b4d69-985e-4cd5-9c1b-ec01824bd4d0" />
-
-  <h3 align="center">Spatia | AI-powered Architectural Visualization App</h3>
-
-## 📋 <a name="table">Table of Contents</a>
-
-1. ✨ [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
-6. 🚀 [More](#more)
-
-## <a name="introduction">✨ Introduction</a>
-
-AI-powered architectural visualization SaaS built with React, TypeScript, and Puter. Use AI models from Claude to Gemini to transform 2D floor plans into photorealistic 3D renders with permanent hosting and persistent metadata. This project features 2D-to-3D photorealistic rendering, serverless workers, high-performance KV storage, and a global community feed.
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-- **[React](https://react.dev/)** is a popular JavaScript library for building user interfaces, specifically for creating single-page applications with a component-based architecture.
-
-- **[Vite](https://vitejs.dev/)** is a next-generation frontend tool that provides an extremely fast development environment and optimized build process for modern web projects.
-
-- **[TypeScript](https://www.typescriptlang.org/)** is a strongly typed superset of JavaScript that adds static types, helping developers catch errors early and write more maintainable code.
-
-- **[TailwindCSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows for rapid UI development by applying pre-defined classes directly in your markup.
-
-- **[Puter](https://jsm.dev/roomify-puter)** is the underlying cloud computing platform and "Internet OS" that provides the infrastructure; including serverless Workers, permanent file storage, key-value (KV) databases, and hosted AI models.
-
-- **[Puter.js](https://jsm.dev/roomify-puterjs)** is the official JavaScript SDK that allows developers to interact with those cloud services directly from the frontend.
-
-- **[Claude](https://www.anthropic.com/claude)** and **[Gemini](https://deepmind.google/technologies/gemini/)** are state-of-the-art large language models used to power the architectural transformation and image generation logic within the application.
+<img width="2229" height="1013" alt="Spatia Hero Image" src="https://github.com/user-attachments/assets/7e6b4d69-985e-4cd5-9c1b-ec01824bd4d0" />
 
 
-## <a name="features">🔋 Features</a>
-👉 **2D-to-3D Visualization**: Instant architectural rendering that transforms flat floor plans into photorealistic 3D models using state-of-the-art AI.
+<h3 align="center">Spatia | AI-Powered Architectural Visualization Platform</h3>
 
-👉 **Persistent Media Hosting**: Permanent file storage that generates public URLs for every upload and output, ensuring your renders are always accessible.
+An AI-powered architectural visualization platform that transforms **2D floor plans into photorealistic 3D renders** using modern AI models and serverless infrastructure.
 
-👉 **Dynamic Project Gallery**: A personalized workspace that tracks your history of visualizations with instant loading and metadata persistence.
+Spatia allows architects, designers, and creators to quickly visualize architectural concepts, store their renders permanently, and share projects with a global community.
 
-👉 **Side-by-Side Comparison**: Interactive tools designed to visualize the direct transformation from a source architectural sketch to its AI-rendered counterpart.
+---
 
-👉 **Global Community Feed**: A public discovery engine where users share their architectural projects with the world in a single click.
+# 🎥 Demo
 
-👉 **Privacy Controls**: Granular public and private toggles that give users full authority over the visibility and security of their architectural data.
+<p align="center">
+  <img src="./public/demo.gif" width="900"/>
+</p>
 
-👉 **Ownership Mapping**: A clean metadata system that tracks project details and user IDs across the entire platform for seamless account management.
+---
 
-👉 **Modern Export Functionality**: High-performance tools to download and move AI-generated renders into real-world presentations and workflows.
+# 📌 Problem
 
+Architects and designers often rely on complex 3D modeling tools to visualize architectural concepts. These tools can require significant time, expertise, and computing resources.
 
+Many early-stage projects begin as **simple 2D floor plans or sketches**, but converting these designs into realistic 3D visualizations typically involves multiple tools, manual modeling, and rendering pipelines.
 
+The goal of this project was to build a **modern AI-powered platform that instantly transforms 2D architectural layouts into photorealistic 3D visualizations**, while also providing persistent hosting, project management, and a community discovery feed.
+
+---
+
+# ✅ Solution
+
+Spatia is a **SaaS-style AI visualization platform** that allows users to upload architectural floor plans and generate photorealistic 3D renders using advanced AI models.
+
+The platform integrates **serverless cloud workers, persistent file storage, and AI model APIs** to process user submissions and generate high-quality visualizations.
+
+Users can store their generated renders permanently, organize projects in a personal gallery, and optionally share their work publicly through a global discovery feed.
+
+The application focuses on **performance, scalability, and modern frontend architecture** while leveraging cloud infrastructure to handle AI generation and storage.
+
+---
+
+# 🧑‍💻 Technologies Used
+
+- **React** – Frontend framework for building the user interface  
+- **TypeScript** – Static typing for improved reliability and maintainability  
+- **Vite** – Fast development server and optimized production builds  
+- **Tailwind CSS** – Utility-first styling for rapid UI development  
+- **Puter Cloud Platform** – Serverless infrastructure including Workers, storage, and KV database  
+- **Puter.js** – JavaScript SDK for interacting with cloud services directly from the frontend  
+- **Claude AI** – Used for AI-driven architectural transformation logic  
+- **Gemini AI** – Used for image generation and visual interpretation  
+
+---
+
+# 🏗️ System Architecture
+
+Spatia uses a modern serverless architecture that combines a React frontend with cloud-based AI processing and persistent storage.
+
+User
+ ↓
+React Frontend
+ ↓
+Puter Serverless Workers
+ ↓
+AI Models (Claude / Gemini)
+ ↓
+Storage + KV Database
+ ↓
+Community Feed
+
+### Architecture Overview
+
+1. **Frontend (React + TypeScript)**  
+   The client application handles user interactions, project management, and visualization UI.
+
+2. **AI Processing Layer**  
+   Floor plan images are sent to AI models (Claude and Gemini) for architectural interpretation and photorealistic render generation.
+
+3. **Serverless Workers (Puter)**  
+   Workers process requests, manage AI interactions, and coordinate file storage operations.
+
+4. **Persistent Storage**  
+   Uploaded floor plans and generated renders are stored permanently with public URLs.
+
+5. **KV Database**  
+   Project metadata, ownership, and visibility settings are stored in a high-performance key-value database.
+
+6. **Community Feed System**  
+   Public projects are indexed and displayed in the global discovery feed.
+
+---  
+
+# 🔥 Key Features
+
+## 2D-to-3D Visualization
+
+Transforms flat architectural floor plans into **photorealistic 3D renders** using modern AI models.
+
+---
+
+## Persistent Media Hosting
+
+All generated renders and uploads are stored with **permanent URLs**, allowing projects to be accessed and shared at any time.
+
+---
+
+## Dynamic Project Gallery
+
+Users can view their complete **history of architectural visualizations**, including project metadata and generated renders.
+
+---
+
+## Side-by-Side Comparison
+
+Spatia allows users to view **original floor plans alongside AI-generated renders**, making transformations easy to visualize.
+
+---
+
+## Global Community Feed
+
+Users can publish projects to a **public community feed**, enabling discovery and inspiration across the platform.
+
+---
+
+## Privacy Controls
+
+Each project includes **public/private visibility controls**, allowing users to manage how their architectural data is shared.
+
+---
+
+## Ownership Mapping
+
+A metadata system tracks **project ownership, user IDs, and project details** across the platform.
+
+---
+
+## Export Tools
+
+Generated renders can be **downloaded and exported** for use in presentations, design workflows, or client reviews.
+
+---
+
+# 🧠 Technical Decisions
+
+### Why Puter?
+
+Puter provides a **serverless cloud platform** with built-in storage, compute workers, and hosted AI models. This allows Spatia to offload heavy AI processing and storage to the cloud while keeping the frontend lightweight.
+
+---
+
+### Why TypeScript?
+
+TypeScript improves code reliability by introducing **static typing**, which helps prevent runtime errors and improves maintainability as the project grows.
+
+---
+
+### Why Serverless Workers?
+
+Serverless workers enable **scalable AI processing** without maintaining traditional backend servers, allowing image generation and data storage to scale automatically.
+
+---
+
+### Why React + Vite?
+
+React provides a component-based architecture for building complex UI interactions, while Vite offers **fast development builds and optimized production performance**.
+
+---
+
+# 📦 Core Application Modules
+
+### Visualization System
+
+- AI render generation
+- 2D floor plan analysis
+- Photorealistic 3D visualization
+
+---
+
+### Project Management
+
+- User project gallery
+- Metadata tracking
+- Persistent render storage
+
+---
+
+### Community Platform
+
+- Global discovery feed
+- Public project sharing
+- Privacy and visibility controls
+
+---
+
+# 🎯 Key Learnings
+
+Through building Spatia I:
+
+- Integrated **AI model APIs for architectural visualization**
+- Built a **SaaS-style architecture using serverless cloud infrastructure**
+- Implemented **persistent storage and metadata tracking**
+- Developed **scalable AI processing workflows**
+- Built a **modern React + TypeScript frontend architecture**
+- Implemented **cloud storage and global project sharing**
+
+---
+
+## ⚙️ Engineering Challenges
+
+One major challenge was handling AI-generated media while keeping the frontend performant. Since generated renders can be large, the system uses persistent cloud storage and metadata tracking to avoid repeatedly transferring large files.
+
+This allows renders to be stored once while being referenced efficiently across the project gallery and community feed.
+
+---
+
+# 🚀 Running the Project Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/spatia.git
+
+- Navigate into the project
+cd spatia
+
+- Install dependencies
+npm install
+
+- Start the development server
+npm run dev
+
+- The application will run at:
+http://localhost:5173
